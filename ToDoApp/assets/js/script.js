@@ -1,4 +1,5 @@
 const inputBox = document.getElementById("input-box");
+const alertTime = document.getElementById("alertTime");
 const listContainer = document.getElementById("list-container");
 
 function displayDate() {
@@ -26,6 +27,13 @@ function addTask() {
     let li = document.createElement("li");
     li.innerHTML = inputBox.value;
     listContainer.appendChild(li);
+
+    //task start time
+    let startTime = document.createElement("p");
+    startTime.innerHTML = alertTime.value;
+    li.appendChild(startTime);
+
+    //task delete icon
     let span = document.createElement("span");
     span.innerHTML = "\u00d7";
     li.appendChild(span);
