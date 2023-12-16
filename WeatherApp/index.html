@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Weather App</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
 </head>
 <body>
     <h1>Weather Dashboard</h1>
     <div class="container">
         <div class="weather-input">
             <h3>Enger a city name</h3>
-            <input type="text" placeholder="Eg.Yangon, Mandalay, Pyin Oo Lwin">
+            <input class="city-input" type="text" placeholder="Eg.Yangon, Mandalay, Pyin Oo Lwin">
             <button class="search-btn">Search</button>
             <div class="separator"></div>
             <button class="location-btn">Use Current Location</button>
@@ -29,6 +30,47 @@
                     <h4>Today is cloudy</h4>
                 </div>
             </div>
+            <div class="days-forecast">
+                <h2>5-Days Forecast</h2>
+                <ul class="weather-cards">
+                    <li class="cards">
+                        <h2>(2023-12-15)</h2>
+                        <img src="assets/images/cloudyday.png" alt="cloudy day">
+                        <h4>Temperature: 20C</h4>
+                        <h4>Wind: 4.31 M/S</h4>
+                        <h4>Hummudity: 79%</h4>
+                    </li>
+                    <li class="cards">
+                        <h2>(2023-12-15)</h2>
+                        <img src="assets/images/cloudyday.png" alt="cloudy day">
+                        <h4>Temperature: 20C</h4>
+                        <h4>Wind: 4.31 M/S</h4>
+                        <h4>Hummudity: 79%</h4>
+                    </li>
+                    <li class="cards">
+                        <h2>(2023-12-15)</h2>
+                        <img src="assets/images/cloudyday.png" alt="cloudy day">
+                        <h4>Temperature: 20C</h4>
+                        <h4>Wind: 4.31 M/S</h4>
+                        <h4>Hummudity: 79%</h4>
+                    </li>
+                    <li class="cards">
+                        <h2>(2023-12-15)</h2>
+                        <img src="assets/images/cloudyday.png" alt="cloudy day">
+                        <h4>Temperature: 20C</h4>
+                        <h4>Wind: 4.31 M/S</h4>
+                        <h4>Hummudity: 79%</h4>
+                    </li>
+                    <li class="cards">
+                        <h2>(2023-12-15)</h2>
+                        <img src="assets/images/cloudyday.png" alt="cloudy day">
+                        <h4>Temperature: 20C</h4>
+                        <h4>Wind: 4.31 M/S</h4>
+                        <h4>Hummudity: 79%</h4>
+                    </li>
+                </ul>
+            </div>
+
         </div>
     </div>
 </body>
